@@ -11,15 +11,15 @@ using namespace std;
 int main()
 {
 	NPC Npc1 = Elf("Legolas");
-	if (Npc1.Name == "")
-		cout << "Npc1 name is empty string" << endl;
-	else
-		cout << Npc1.Name << endl;
+	//if (Npc1.Name == "")
+	//	cout << "Npc1 name is empty string" << endl;
+	//else
+	//	cout << Npc1.Name << endl;
 	Npc1 = Farmer(Npc1);
-	cout << Npc1.Name << endl;
+	//cout << Npc1.Name << endl;
 
-	if (Npc1.Name == "")
-		cout << "Npc1 name is empty string" << endl;
+	//if (Npc1.Name == "")
+	//	cout << "Npc1 name is empty string" << endl;
 
 	NPC Npc2 = Elf("Galadriel");
 	Npc2 = Farmer(Npc2);
@@ -35,6 +35,6 @@ int main()
 
 	vector<NPC> NPCs = {Npc1, Npc2, Npc3, Npc4, Npc5};
 
-	/*for (int i = 0; i < NPCs.size(); i++)
-		NPCs[i].render();*/
+	for (int i = 0; i < NPCs.size(); i++)
+		NPCs[i].render();
 }
