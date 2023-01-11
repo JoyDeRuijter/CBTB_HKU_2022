@@ -1,10 +1,10 @@
 #include <iostream>
+#include <vector>
 #include "Elf.h"
 #include "Orc.h"
 #include "Farmer.h"
 #include "Soldier.h"
 #include "Shaman.h"
-#include <vector>
 
 using namespace std;
 
@@ -22,5 +22,6 @@ int main()
 	{
 		NPCs[i]->render();
 		cout << "" << endl;
+		delete NPCs[i];
 	}
 }
