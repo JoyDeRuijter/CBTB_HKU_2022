@@ -3,7 +3,13 @@
 
 class RoleDecorator : public NPC
 {
+	private:
+		NPC* Npc;
+
 	public:
-		NPC Npc;
+		RoleDecorator(NPC* _Npc);
+		virtual ~RoleDecorator();
+
+		virtual void render();
 };
 

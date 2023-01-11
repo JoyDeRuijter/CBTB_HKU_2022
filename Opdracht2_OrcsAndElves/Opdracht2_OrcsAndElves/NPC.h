@@ -4,8 +4,13 @@ using namespace std;
 
 class NPC
 {
-	public:
+	protected:
 		string Name;
-		void render();
+
+	public:
+		NPC();
+		virtual ~NPC();
+
+		virtual void render() = 0;
 };
 

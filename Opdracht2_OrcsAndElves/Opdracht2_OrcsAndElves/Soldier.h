@@ -4,6 +4,9 @@
 class Soldier : public RoleDecorator
 {
 	public:
-	Soldier(NPC _Npc);
+		Soldier(NPC* _Npc);
+		virtual ~Soldier();
+
+		void render();
 };
 

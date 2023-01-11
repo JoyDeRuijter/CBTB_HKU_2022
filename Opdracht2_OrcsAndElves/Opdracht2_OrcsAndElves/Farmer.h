@@ -5,6 +5,9 @@
 class Farmer : public RoleDecorator
 {
 	public:
-		Farmer(NPC _Npc);
+		Farmer(NPC* _Npc);
+		virtual ~Farmer();
+
+		void render();
 };
 

@@ -3,5 +3,12 @@
 
 Orc::Orc(string _Name)
 {
-	Name = _Name + " the Orc";
+	Name = _Name;
+}
+
+Orc::~Orc(){}
+
+void Orc::render()
+{
+	cout << Name << " is an Orc." << endl;
 }

@@ -1,7 +1,11 @@
 #include <iostream>
 #include "NPC.h"
 
-void NPC::render()
-{
-	cout << Name << endl;
-}
+NPC::NPC(){}
+
+NPC::~NPC(){}
+
+//void NPC::render()
+//{
+//	cout << Name << endl;
+//}

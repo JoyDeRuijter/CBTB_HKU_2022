@@ -1,6 +1,12 @@
+#include <iostream>
 #include "Shaman.h"
 
-Shaman::Shaman(NPC _Npc)
+Shaman::Shaman(NPC* _Npc) : RoleDecorator(_Npc) {}
+
+Shaman::~Shaman() {}
+
+void Shaman::render()
 {
-	_Npc.Name += " - shaman -";
+	RoleDecorator::render();
+	cout << "They are a well respected shaman." << endl;
 }
